@@ -1,0 +1,76 @@
+# General
+alias _='sudo'
+alias q='exit'
+alias del='rm -rf'
+
+alias cat='ccat'
+alias top='gotop'
+alias gg='lazygit'
+
+
+# ls & tree
+alias ll='exa --long --header'
+alias la='exa --long --all --header'
+alias llt='exa --long --header --tree'
+alias lat='exa --long --all --header --tree'
+alias lt='exa --tree'
+alias lta='exa --all --tree'
+
+
+# cd
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+
+# Tmux
+alias t='tmux'
+alias tt='tmux clock-mode'
+alias tl='tmux ls'
+alias tc='tmux list-clients'
+alias tn='tmux new -s' # NAME
+alias td='tmux detach'
+alias ta='tmux attach -t' # NAME
+alias tk='tmux kill-session -t' # NAME
+alias tq='tmux kill-server'
+
+
+# Sublime Text
+alias s='subl'
+alias ss='subl .'
+
+
+# Neovim
+alias e='nvim'
+alias ee='nvim .'
+
+
+# Git
+alias g='git'
+alias gs='git status --short'
+alias ga='git add -A'
+alias gl='git log --oneline --graph'
+
+
+# Server
+pyserv() {
+  if [[ -n $1 ]] ; then
+    port="$1"
+  else
+    port="8000"
+  fi
+
+  old_dir="$(pwd)"
+
+  if [[ -n $2 ]] ; then
+    cd $2
+  fi
+
+  screen -dmS pyserv${port} python -m SimpleHTTPServer ${port}
+  echo "http://localhost:${port}"
+  echo "screen -r pyserv${port}"
+
+  if ! [[ "$(pwd)" == $old_dir ]] ; then
+    cd $old_dir
+  fi
+}
