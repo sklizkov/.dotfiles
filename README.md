@@ -2,9 +2,9 @@
 
 ## Command-line Tools
 
-[neofetch](https://github.com/dylanaraps/neofetch) - `brew install neofetch`  
 [exa](https://github.com/ogham/exa) - `brew install exa`  
 [ccat](https://github.com/owenthereal/ccat) - `brew install ccat`  
+[htop](https://github.com/htop-dev/htop) - `brew install htop`  
 [gotop](https://github.com/xxxserxxx/gotop) - `brew install gotop`  
 [lazygit](https://github.com/jesseduffield/lazygit) - `brew install lazygit`  
 [tmux](https://github.com/tmux/tmux) - `brew install tmux`  
