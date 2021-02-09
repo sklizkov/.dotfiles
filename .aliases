@@ -46,27 +46,27 @@ alias ee='nvim .'
 
 
 # Git
-alias g='git'
-alias gs='git status --short'
-alias ga='git add -A'
-alias gcm='git commit -m'
-alias gcr='git reset --soft HEAD^'
-alias gl='git log --oneline --graph'
+# alias g='git'
+# alias gs='git status --short'
+# alias ga='git add -A'
+# alias gcm='git commit -m'
+# alias gcr='git reset --soft HEAD^'
+# alias gl='git log --oneline --graph'
 
-# alias clone='git clone'
-# alias checkout='git checkout'
-# alias checkin='git checkout -b'
-# alias wipe='git checkout .'
-# alias status='git status --short'
-# alias add='git add'
-# alias all='git add -A'
-# alias commit='git commit -m'
-# alias reset='git reset --soft HEAD^'
-# alias log='git log --oneline --graph'
-# alias stat='git diff --stat'
-# alias diff='git diff'
-# alias pull='git pull'
-# alias push='git push'
+alias clone='git clone'
+alias checkout='git checkout'
+alias checkin='git checkout -b
+alias wipe='git checkout .'
+alias status='git status --short'
+alias add='git add'
+alias all='git add -A'
+alias commit='git commit -m'
+alias reset='git reset --soft HEAD^'
+alias log='git log --oneline --graph'
+alias stat='git diff --stat'
+alias diff='git diff'
+alias pull='git pull'
+alias push='git push'
 
 
 # Server
@@ -91,3 +91,4 @@ pyserv() {
     cd $old_dir
   fi
 }
+'

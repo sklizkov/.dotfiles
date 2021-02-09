@@ -6,6 +6,22 @@
 [ccat](https://github.com/owenthereal/ccat) - `brew install ccat`  
 [htop](https://github.com/htop-dev/htop) - `brew install htop`  
 [gotop](https://github.com/xxxserxxx/gotop) - `brew install gotop`  
-[lazygit](https://github.com/jesseduffield/lazygit) - `brew install lazygit`  
 [tmux](https://github.com/tmux/tmux) - `brew install tmux`  
-[neovim](https://github.com/neovim/neovim) - `brew install neovim`  
+
+## neovim
+
+[neovim](https://github.com/neovim/neovim)  
+
+```bash
+brew install neovim
+```
+
+### vim-plug
+
+[vim-plug](https://github.com/junegunn/vim-plug)  
+
+```bash
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
