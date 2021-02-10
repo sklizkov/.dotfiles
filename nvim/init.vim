@@ -233,4 +233,4 @@ let g:ctrlp_prompt_mappings = {
   \ }
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
-r
+
